@@ -1,0 +1,774 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+
+}
+
+/*Navbar*/
+
+.navbar{
+    background-color: #2E294E;
+    height: 4rem;
+}
+
+.navbar-nav{
+    padding-left: 45rem !important;
+}
+
+.navbar-brand::after{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 4px;
+    border-radius: 3px;
+    background: #D90368;
+    transition: width .3s;
+
+}
+
+.navbar-brand:hover::after{
+    width: 25%;
+    transition: width 0.3s;
+}
+
+.Brandname{
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.Lastname{
+    font-size: 2rem;
+    color: rgb(217, 3, 104);
+}
+
+.nav-link{
+    color: #fff !important;
+    padding-right: 4rem !important;
+    margin-top: 3rem;
+}
+
+.nav-link::after{
+    content: '';
+    display: block;
+    width: 0%;
+    height: 4px;
+    border-radius: 3px;
+    background: rgb(217, 3, 104) !important;
+    transition: width .3s;
+    margin-top: 15px;
+    z-index: 1;
+    position: relative;
+}
+
+.nav-link:hover::after{
+    width: 100% !important;
+    transition: width 0.3s !important;
+    z-index: 1;
+
+}
+
+
+
+/*header section*/
+
+.header{
+    height: 40rem;
+    width: 100%;
+    background-color: #2E294E;
+    clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
+
+}
+
+.header-image{
+    width: 100%;
+    transform: translate(-22%, -15%);
+}
+
+.header-text{
+    transform: translate(20%, 80%);
+}
+
+.header-text h3{
+    margin-bottom: 3rem !important;
+    color: #fff;
+}
+
+.header-hello{
+    font-size: 3rem !important;
+    color: #D90368;
+}
+
+.header-amanuel{
+    font-size: 3rem !important;
+    color: #D90368;
+}
+
+.skill{
+    font-size: 3rem !important;
+    color: #D90368;
+}
+
+.header-text a{
+    border: 4px solid #D90368;
+    border-radius: 10px;
+    padding: 1rem 6rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.header-text a:hover{
+    text-decoration: none;
+    color: #fff;
+    background-color: #D90368;
+    border: none;
+}
+
+
+/*Project Section*/
+
+.Myprojects{
+    height: 90rem;
+    background-color: #f4f3fa;
+    margin-top: -15vh;  
+}
+
+.project-header{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+h2{
+    color: #D90368;
+    text-align: center;
+}
+
+.projects-hr{
+    width: 10%;
+    border-color: rgb(255, 184, 90);
+    transform: translateX(450%);
+    margin-top: 2rem;
+}
+
+.row{
+    transform: translateX(0%);
+}
+
+#row2{
+    margin-top: 5rem;
+}
+
+#card2{
+    margin-left: 7.5rem;
+}
+
+.card{
+    position: relative;
+    border-radius: 1.25rem !important;
+}
+
+
+
+
+.card:hover{
+    box-shadow: -10px 10px 20px rgba(0, 0, 0,0.3) !important;
+    transform: skewY(1.1);
+}
+
+.card-body{
+    padding: 0.25rem !important;
+}
+
+.card .card-body a{
+    padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
+    color: brown;
+}
+
+.card-title{
+    color: #D90368;
+}
+
+.card-hr{
+    border-color: #2E294E;
+}
+
+.btn{
+    background-color: #fff !important;
+}
+
+
+/*About Me*/
+
+.about-section{
+    background-color: #2E294E;
+    height: 50rem;
+}
+
+.about-header{
+    transform: translate(50%, 150%);
+    text-align: center !important;
+}
+
+h2{
+    font-family: "Vollkorn";
+}
+
+h5{
+    color:#fff;
+}
+
+
+.about-text , .about-text h2{
+    transform: translate(0%, 150%);
+    text-align: center;
+}
+
+.hr-about{
+    width: 20%;
+    border-color: #fff;
+    transform: translate(200%, -50%);
+}
+
+.skills-header {
+    margin-top: -10rem;
+    transform: translate(-1%, 450%);
+}
+
+.skills-table{
+    margin-top: -5rem;
+    transform: translate(87%, 250%);
+}
+
+.hr-skills{
+    width: 15%;
+    border-color: #fff;
+    transform: translate(290%, 50%);
+}
+
+.hr-skills-top{
+    width: 100%;
+    border-color: #fff;
+    background-color: #2E294E !important;
+    margin-top: 9rem;
+    margin-bottom: 0rem !important;
+}
+
+.hr-bottom{
+    width: 1000%;
+    border-color: #fff;
+    margin-top: 25rem;
+    transform: translateX(-50%);
+}
+
+
+
+/*Footer*/
+
+.footer-section{
+    height: 15rem;
+    background-color: #2E294E;
+    font-family: "Vollkorn";
+    
+}
+
+.footer-section .row{
+    transform: translate(5%, 50%);
+}
+
+.footer h3{
+    color: #fff;
+}
+
+.footer-hr{
+    width: 10%;
+    border-color: #D90368 !important;
+}
+
+.footer p{
+    color: #ffffff;
+}
+
+.copy{
+    transform: translate(35%, 330%);
+    color: #D90368;
+
+}
+
+#Box1{
+    animation:  movingleft 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box2{
+    animation:  movingright 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box3{
+    animation:  movingright 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box4{
+    animation:  movingright 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box5{
+    animation:  movingright 2s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box6{
+    animation: movingleft 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box7{
+    animation:  movingright 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box8{
+    animation:  movingleft 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box9{
+    animation:  movingright 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box10{
+    animation:  movingleft 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box11{
+    animation:  movingright 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box12{
+    animation:  movingleft 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box13{
+    animation:  movingright 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box15{
+    animation:  movingright 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+#Box14{
+    animation:  movingleft 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box16{
+    animation:  movingleft 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box17{
+    animation:  movingright 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box18{
+    animation:  movingleft 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box19{
+    animation:  movingright 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box20{
+    animation:  movingleft 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#Box21{
+    animation:  movingright 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#bigflower{
+    animation: leftright 2s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+#littleflower{
+    animation: updown 1s infinite linear;
+    transform-box: fill-box;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes updown{
+
+    0%{
+        transform: rotate(-5deg);
+        transform-origin: 50% 50%;
+    }
+}
+
+@keyframes leftright{
+    0%{
+        transform: rotate(-5deg);
+        transform-origin: 50% 50%;
+
+    }
+
+}
+
+@keyframes movingleft{
+    0%{
+        transform: translateX(10px);
+    }
+}
+
+@keyframes movingright{
+    0%{
+        transform: translateX(-10px);
+    }
+
+}
+
+@media (max-width: 360px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .row{
+        width: 100%;
+    }
+
+    .header{
+        height: 47rem !important;
+        clip-path: polygon(0 0, 100% 0, 100% 111vh, 0 100%) !important;
+    }
+
+    .header-text{
+        transform: translate(8%, -219%);    
+    }
+
+    .header-image{
+        transform: translate(12%, 21%) !important;
+        width: 84%;
+    }
+
+    .Myprojects{
+        height: 214rem !important;
+    }
+
+    .project-header{
+        transform: translateX(5%) !important;
+    }
+
+    #row2{
+        width: 100% !important;
+    }
+
+    #card1{
+        transform: translateX(7%) !important;
+        margin-bottom: 1rem !important;
+        margin-left: -0.5rem;
+    }
+
+    #card2{
+        transform: translateX(-34%) !important;
+        margin-bottom: 1rem !important;
+        margin-left: 7.5rem;
+    }
+
+    #card3{
+        transform: translateX(7%) !important;
+        margin-left: -0.5rem;
+    }
+
+
+
+    .about-section{
+        height: 200vh !important;
+    }
+
+    .about-header{
+        transform: translateX(6%) !important;
+        margin-top: 2rem !important;
+    }
+
+    .about-text{
+        transform: translate(5%, 7%) !important;
+    }
+
+    .skills-table{
+        width: 100%;
+        margin-bottom: 9rem;
+        transform: translate(37%, 231%);
+    }
+
+    .footer-section{
+        height: 127vh !important;
+    }
+
+    .footer-container{
+        text-align: center;
+    }
+
+    .footer-hr{
+        transform: translateX(436%);
+    }
+
+    .copy{
+        transform: translate(-1%, 1032%);
+    }
+}
+
+
+@media (max-width: 411px){
+    body, html{
+        overflow-x: hidden;
+    }
+
+    .row{
+        width: 100%;
+    }
+
+    .header{
+        height: 50rem;
+        clip-path: polygon(0 0, 100% 0, 100% 102vh, 0 100%);
+    }
+
+    .header-text{
+        transform: translate(8%, -219%);    
+    }
+
+    .header-image{
+        transform: translate(12%, 21%) !important;
+        width: 84%;
+    }
+
+    .Myprojects{
+        height: 215rem;
+    }
+
+    .project-header{
+        transform: translateX(5%) !important;
+    }
+
+    #card1{
+        transform: translateX(12%);
+        margin-bottom: 1rem !important;
+    }
+
+    #card2{
+        transform: translateX(-26%);
+        margin-bottom: 1rem !important;
+    }
+
+    #card3{
+        transform: translateX(12%);
+        margin-bottom: 1rem !important;
+    }
+
+    .about-section{
+        height: 74rem !important;
+    }
+
+    .about-header{
+        transform: translateX(3%);
+        margin-top: 2rem !important;
+    }
+
+    .about-text{
+        transform: translate(5%, 7%);
+    }
+
+    .skills-table{
+        width: 100%;
+        margin-bottom: 9rem;
+        transform: translate(37%, 231%);
+    }
+
+    .footer-section{
+        height: 50rem !important;
+    }
+
+    .footer-container{
+        text-align: center;
+    }
+
+    .footer-hr{
+        transform: translateX(436%);
+    }
+
+    .copy{
+        transform: translate(-1%, 1032%);
+    }
+}
+
+@media (max-width: 375px){
+
+    .header{
+        clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%);
+    }
+
+    #card1{
+        transform: translateX(9%) !important;
+    }
+
+    #card2{
+        transform: translateX(-30%) !important;
+    }
+
+    #card3{
+        transform: translateX(9%) !important;
+    }
+}
+
+@media (max-width: 414px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .row{
+        width: 100%;
+    }
+
+    .header{
+        height: 47rem;
+        clip-path: polygon(0 0, 100% 0, 100% 94vh, 0 100%);
+    }
+
+    .header-text{
+        transform: translate(8%, -219%);
+    }
+
+    .header-text a{
+        margin-left: 1rem;
+    }
+
+    .header-image{
+        transform: translate(12%, 21%) !important;
+        width: 84%;
+    }
+
+    .Myprojects{
+        height: 214rem;
+    }
+
+    .project-header{
+        transform: translateX(6%) !important;
+    }
+
+    #card1{
+        transform: translateX(14%);
+        margin-bottom: 1rem !important;
+    }
+
+    #card2{
+        transform: translateX(-24%);
+        margin-bottom: 1rem !important;
+
+    }
+
+    #card3{
+        transform: translateX(13%);
+    }
+
+    .about-section{
+        height: 74rem;
+    }
+
+    .about-header{
+        transform: translateX(6%) !important;
+        margin-top: 2rem !important;
+    }
+
+    .about-text{
+        transform: translate(5%, 7%) !important;
+    }
+
+    .skills-table{
+        width: 100%;
+        margin-bottom: 9rem;
+        transform: translate(37%, 231%);
+    }
+
+    .footer-section{
+        height: 50rem !important;
+    }
+
+    .footer-container{
+        text-align: center;
+    }
+
+    .footer-hr{
+        transform: translateX(436%);
+    }
+
+    .copy{
+        transform: translate(-1%, 1032%);
+    }
+}
+
+@media (max-width: 1024px){
+    body, html{
+        overflow-x: hidden;
+    }
+
+    .navbar-nav{
+        transform: translateX(-30%);
+    }
+
+    .header{
+        height: 50rem;
+    }
+
+    .header-image{
+        transform: translate(1%, 3%);
+    }
+
+    .Myprojects{
+        margin-top: -6rem;
+    }
+
+    #row{
+        padding-left: 0rem;
+    }
+}
+
