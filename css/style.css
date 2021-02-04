@@ -18,7 +18,8 @@ html{
 }
 
 .navbar-nav{
-    padding-left: 45rem !important;
+    z-index: 1;
+    margin-left: 27rem;
 }
 
 .navbar-brand::after{
@@ -29,17 +30,20 @@ html{
     border-radius: 3px;
     background: #D90368;
     transition: width .3s;
-
+    
 }
 
 .navbar-brand:hover::after{
     width: 25%;
     transition: width 0.3s;
+    z-index: 1;
+
 }
 
 .Brandname{
     color: #ffffff;
     font-size: 2rem;
+
 }
 
 .Lastname{
@@ -63,7 +67,6 @@ html{
     transition: width .3s;
     margin-top: 15px;
     z-index: 1;
-    position: relative;
 }
 
 .nav-link:hover::after{
@@ -82,7 +85,6 @@ html{
     width: 100%;
     background-color: #2E294E;
     clip-path: polygon(0 0, 100% 0, 100% 70vh, 0 100%);
-
 }
 
 .header-image{
@@ -133,7 +135,7 @@ html{
 /*Project Section*/
 
 .Myprojects{
-    height: 90rem;
+    height: 85rem;
     background-color: #f4f3fa;
     margin-top: -15vh;  
 }
@@ -163,8 +165,14 @@ h2{
     margin-top: 5rem;
 }
 
+#card1{
+    margin-right: .5rem !important;
+    margin-left: -0.5rem;
+}
+
 #card2{
-    margin-left: 7.5rem;
+    margin-right: 0.5rem !important;
+    margin-left: -.5rem;
 }
 
 .card{
@@ -172,12 +180,9 @@ h2{
     border-radius: 1.25rem !important;
 }
 
-
-
-
 .card:hover{
     box-shadow: -10px 10px 20px rgba(0, 0, 0,0.3) !important;
-    transform: skewY(1.1);
+    transition: all 0.7s ease;
 }
 
 .card-body{
@@ -207,7 +212,7 @@ h2{
 
 .about-section{
     background-color: #2E294E;
-    height: 50rem;
+    height: 55.5rem;
 }
 
 .about-header{
@@ -255,7 +260,7 @@ h5{
     width: 100%;
     border-color: #fff;
     background-color: #2E294E !important;
-    margin-top: 9rem;
+    margin-top: 11rem;
     margin-bottom: 0rem !important;
 }
 
@@ -292,6 +297,15 @@ h5{
 
 .footer p{
     color: #ffffff;
+}
+
+.footer-social i{
+    cursor: pointer;
+}
+
+.fa-github{
+    font-size: 2rem;
+    color: #fff;
 }
 
 .copy{
@@ -464,10 +478,443 @@ h5{
     0%{
         transform: translateX(-10px);
     }
+}
+
+/**/
+
+
+@media (max-width: 22.5em) /*360*/{
+    body, html{
+        overflow-x: hidden;
+    }
+
+    .row{
+        width: 100%;
+    }
+
+    #row2{
+        margin-top: 1rem;
+    }
+
+    .navbar-collapse{
+        background-color: #2E294E;
+        margin-top: 1rem !important;
+    }
+
+    .nav-link{
+        margin-left: 0rem;
+    }
+    
+
+
+    .header{
+        height: 47rem !important;
+        clip-path: polygon(0 0, 100% 0, 100% 111vh, 0 100%) !important;
+    }
+
+    .header-text{
+        transform: translate(8%, -219%) !important;    
+    }
+
+    .header-image{
+        transform: translate(-17%, 21%) !important;
+        width: 84%;
+    }
+
+
+
+    .Myprojects{
+        height: 280rem !important;
+    }
+
+    .card{
+        margin-bottom: 1rem;
+        transform: translateX(5%);
+    }
+
+    .about-section{
+        height: 84rem !important;
+    }
+
+    .about-header{
+        transform: translateX(3%);
+        margin-top: 2rem !important;
+    }
+
+    .about-text{
+        transform: translate(5%, 7%) !important;
+    }
+
+    .skills-table{
+        width: 100%;
+        margin-bottom: 9rem;
+        transform: translate(37%, 231%);
+    }
+
+    .footer-section{
+        height: 45rem !important;
+    }
+
+    .footer-container{
+        text-align: center;
+    }
+
+    .footer-hr{
+        transform: translateX(436%);
+    }
+
+    .copy{
+        transform: translate(-1%, 1032%);
+    }
+}
+
+@media (max-width: 23.4375em) /*375*/{
+    body, html{
+        overflow-x: hidden;
+    }
+
+    .row{
+        width: 100%;
+    }
+
+    #row2{
+        margin-top: 1rem;
+    }
+
+    .navbar-collapse{
+        background-color: #2E294E;
+        z-index: 2;
+
+    }
+
+    .nav-link{
+        margin-left: 0rem;
+    }
+    
+    .header{
+        height: 47rem !important;
+        clip-path: polygon(0 0, 100% 0, 100% 111vh, 0 100%) !important;
+    }
+
+    .header-text{
+        transform: translate(8%, -219%) !important;    
+    }
+
+    .header-image{
+        transform: translate(-17%, 21%) !important;
+        width: 84%;
+    }
+
+    .Myprojects{
+        height: 166rem !important;
+    }
+
+    .card{
+        margin-bottom: 1rem;
+        transform: translateX(5%);
+    }
+
+
+    .about-section{
+        height: 74rem !important;
+    }
+
+    .about-header{
+        transform: translateX(3%);
+        margin-top: 2rem !important;
+    }
+
+    .about-text{
+        transform: translate(5%, 7%) !important;
+    }
+
+    .skills-table{
+        width: 100%;
+        margin-bottom: 9rem;
+        transform: translate(37%, 231%);
+    }
+
+    .footer-section{
+        height: 60rem !important;
+    }
+
+    .footer-container{
+        text-align: center;
+    }
+
+    .footer-hr{
+        transform: translateX(436%);
+    }
+
+    .copy{
+        transform: translate(-1%, 1032%);
+    }
+}
+
+@media (max-width: 25.6875em) /*411*/{
+    body, html{
+        overflow-x: hidden;
+    }
+
+    .row{
+        width: 100%;
+    }
+
+    #row2{
+        margin-top: 1rem;
+    }
+
+    .navbar-collapse{
+        background-color: #2E294E;
+        margin-top: 1rem;
+    }
+    
+    .nav-link{
+        margin-left: 0rem;
+    }
+
+    .header{
+        height: 47rem !important;
+        clip-path: polygon(0 0, 100% 0, 100% 111vh, 0 100%) !important;
+    }
+
+    .header-text{
+        transform: translate(8%, -219%) !important;    
+    }
+
+    .header-image{
+        transform: translate(-17%, 21%) !important;
+        width: 84%;
+    }
+
+    .Myprojects{
+        height: 304rem;
+    }
+
+    .card{
+        margin-bottom: 1rem;
+        transform: translateX(5%);
+    }
+
+    .about-section{
+        height: 74rem !important;
+    }
+
+    .about-header{
+        transform: translateX(3%);
+        margin-top: 2rem !important;
+    }
+
+    .about-text{
+        transform: translate(5%, 7%) !important;
+    }
+
+    .skills-table{
+        width: 100%;
+        margin-bottom: 9rem;
+        transform: translate(37%, 231%);
+    }
+}
+
+@media (max-width: 25.875em) /*414*/{
+    body, html{
+        overflow-x: hidden;
+    }
+
+    .row{
+        width: 100%;
+    }
+
+    #row2{
+        margin-top: 1rem;
+    }
+
+    .navbar-collapse{
+        background-color: #2E294E;
+        margin-top: 1rem;
+        z-index: 2;
+    }
+
+    .nav-link{
+        margin-left: 0rem;
+    }
+
+
+    .header{
+        height: 47rem !important;
+        clip-path: polygon(0 0, 100% 0, 100% 111vh, 0 100%) !important;
+    }
+
+    .header-text{
+        transform: translate(8%, -219%) !important;    
+    }
+
+    .header-image{
+        transform: translate(-17%, 21%) !important;
+        width: 84%;
+    }
+
+    .Myprojects{
+        height: 170rem;
+    }
+
+    .card{
+        margin-bottom: 1rem;
+        transform: translateX(5%);
+    }
+
+
+    .about-section{
+        height: 88rem !important;
+    }
+
+    .about-header{
+        transform: translateX(3%);
+        margin-top: 2rem !important;
+    }
+
+    .about-text{
+        transform: translate(5%, 7%) !important;
+    }
+
+    .skills-table{
+        width: 100%;
+        margin-bottom: 9rem;
+        transform: translate(40%, 231%) !important;
+    }
+
+    .footer-section{
+        height: 47rem !important;
+        margin-top: -10rem;
+    }
+
+    .footer-container{
+        text-align: center;
+    }
+
+    .footer-hr{
+        transform: translateX(436%);
+    }
+
+    .copy{
+        transform: translate(-1%, 1032%);
+    }
+}
+
+@media (max-width: 37.5em){
+    
+    body, html{
+        overflow-x: hidden;
+    }
+
+    .navbar-collapse{
+        background-color: #2E294E;
+        z-index: 2;
+    }   
+
+    .navbar-nav{
+        margin-left: 0rem;
+
+    }
+
+    .nav-link{
+        margin-left: 0rem;
+    }
+
 
 }
 
-@media (max-width: 360px){
+
+
+
+
+
+
+@media (max-width: 48em){ /*768px*/
+    body, html{
+        overflow-x: hidden;
+    }
+
+    .navbar-collapse{
+        background-color: #2E294E;
+        z-index: 2;
+        margin-top: 1rem;
+
+    }
+
+    .navbar-nav{
+        margin-left: 0rem;
+    }
+
+    .header{
+        height: 35rem;
+        clip-path: polygon(0 0, 100% 0, 100% 103vh, 0 100%);
+    }
+
+    .header-image{
+        margin-left: 5rem;
+    }
+
+    .header-text{
+        transform: translate(3%, 20%);
+
+    }
+
+    .Myprojects{
+        margin-top: -6rem;
+    }
+
+    #card1{
+        margin-right: 12rem !important;
+        margin-left: 2rem;
+    }
+
+
+
+    .about-text{
+        transform: translate(0%, 115%);
+    }
+
+    .skills-table{
+        transform: translate(123px, 325px);
+    }
+}
+
+
+@media (min-width: 64em){ /*1024px*/
+    body, html{
+        overflow-x: hidden;
+    }
+
+
+    .header{
+        height: 49rem !important;
+        clip-path: polygon(0 0, 100% 0, 100% 103vh, 0 100%);
+
+    }
+
+    .header-image{
+        transform: translate(1%, 3%);
+    }
+
+    .header-text{
+        transform: translate(12%, 80%);
+    }
+
+    .Myprojects{
+        margin-top: -6rem;
+    }
+
+    .about-text{
+        transform: translate(0%, 115%);
+    }
+}
+
+
+
+
+/*
+@media (max-width: 22.6em ){ 360p
 
     body{
         overflow-x: hidden;
@@ -483,7 +930,7 @@ h5{
     }
 
     .header-text{
-        transform: translate(8%, -219%);    
+        transform: translate(8%, -219%) !important;    
     }
 
     .header-image{
@@ -492,7 +939,7 @@ h5{
     }
 
     .Myprojects{
-        height: 214rem !important;
+        height: 282rem !important;
     }
 
     .project-header{
@@ -504,19 +951,20 @@ h5{
     }
 
     #card1{
-        transform: translateX(7%) !important;
+        transform: translate(-3%,0%) !important;
+        margin-left: 1.5rem !important;
         margin-bottom: 1rem !important;
         margin-left: -0.5rem;
     }
 
     #card2{
-        transform: translateX(-34%) !important;
+        transform: translate(15%,0%) !important;
         margin-bottom: 1rem !important;
-        margin-left: 7.5rem;
+        margin-left: -1.6rem !important;
     }
 
     #card3{
-        transform: translateX(7%) !important;
+        transform: translate(7%,0%) !important;
         margin-left: -0.5rem;
     }
 
@@ -559,7 +1007,41 @@ h5{
 }
 
 
-@media (max-width: 411px){
+
+@media (max-width: 23.4375em){ 375px
+
+    .header{
+        clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%);
+    }
+
+    .header-text{
+        transform: translate(8%, -219%) !important;
+    }
+
+    .Myprojects{
+        height: 291rem !important;
+    }
+
+    #card1{
+        transform: translate(0%, 0%) !important;
+    }
+
+    #card2{
+        transform: translate(17%,0%);
+        margin-left: -2.5rem;
+    }
+
+    #card3{
+        transform: translate(9%,0%) !important;
+    }
+
+    .about-section{
+        height: 74rem !important;
+    }
+}
+
+
+@media (max-width: 25.6875em){ 411px
     body, html{
         overflow-x: hidden;
     }
@@ -569,12 +1051,12 @@ h5{
     }
 
     .header{
-        height: 50rem;
+        height: 50rem !important;
         clip-path: polygon(0 0, 100% 0, 100% 102vh, 0 100%);
     }
 
     .header-text{
-        transform: translate(8%, -219%);    
+        transform: translate(8%, -219%) !important;    
     }
 
     .header-image{
@@ -583,7 +1065,7 @@ h5{
     }
 
     .Myprojects{
-        height: 215rem;
+        height: 308rem !important ;
     }
 
     .project-header{
@@ -641,26 +1123,7 @@ h5{
     }
 }
 
-@media (max-width: 375px){
-
-    .header{
-        clip-path: polygon(0 0, 100% 0, 100% 87vh, 0 100%);
-    }
-
-    #card1{
-        transform: translateX(9%) !important;
-    }
-
-    #card2{
-        transform: translateX(-30%) !important;
-    }
-
-    #card3{
-        transform: translateX(9%) !important;
-    }
-}
-
-@media (max-width: 414px){
+@media only screen and (max-width: 25.875em){ 414px
     body{
         overflow-x: hidden;
     }
@@ -670,12 +1133,12 @@ h5{
     }
 
     .header{
-        height: 47rem;
+        height: 47rem !important;
         clip-path: polygon(0 0, 100% 0, 100% 94vh, 0 100%);
     }
 
     .header-text{
-        transform: translate(8%, -219%);
+        transform: translate(8%, -219%) !important;
     }
 
     .header-text a{
@@ -683,12 +1146,12 @@ h5{
     }
 
     .header-image{
-        transform: translate(12%, 21%) !important;
+        transform: translate(-16%, 21%) !important;
         width: 84%;
     }
 
     .Myprojects{
-        height: 214rem;
+        height: 309rem;
     }
 
     .project-header{
@@ -696,14 +1159,18 @@ h5{
     }
 
     #card1{
-        transform: translateX(14%);
+        transform: translateX(5%);
         margin-bottom: 1rem !important;
     }
 
     #card2{
-        transform: translateX(-24%);
+        transform: translateX(23%);
         margin-bottom: 1rem !important;
 
+    }
+
+    .card2{
+        margin-left: 1rem;
     }
 
     #card3{
@@ -746,29 +1213,4 @@ h5{
     }
 }
 
-@media (max-width: 1024px){
-    body, html{
-        overflow-x: hidden;
-    }
-
-    .navbar-nav{
-        transform: translateX(-30%);
-    }
-
-    .header{
-        height: 50rem;
-    }
-
-    .header-image{
-        transform: translate(1%, 3%);
-    }
-
-    .Myprojects{
-        margin-top: -6rem;
-    }
-
-    #row{
-        padding-left: 0rem;
-    }
-}
-
+*/
